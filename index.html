@@ -4,35 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
     <header>
       <nav>
-        <a href="">
+        <a href="/">
           <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
         </a>
         <ul>
-          <li><a href="#" target="_blank">Франшиза</a></li>
-          <li><a href="#">Наші традиції</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li>
+            <a class="link" href="#traditions-section">Наші традиції</a></li>
+          <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a class="link" href="#formats-section">Формати</a></li>
+          <li><a class="link" href="#contact-section">Контакти</a></li>
         </ul>
       </nav>
-      <button type="button">Замовити дзвінок</button>
+      <button class="button">Замовити дзвінок</button>
     </header>
 
     <main>
       <section>
-        <h1>Сучасна пекарня</h1>
+        <h1 class="hero-title"> <span class="accent">Сучасна</span> пекарня</h1>
       </section>
-      <section>
+      <section id="traditions-section">
         <!-- Секція нових форматів -->
-        <ul>
+        <ul class="adventeges-list">
           <li>Великий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
           <li>Досвідчена управлінська команда</li>
         </ul>
-        <h2>Новий формат традицій</h2>
+        <h2 class="section-title">Новий формат традицій</h2>
         <p>
           <span>shop bakery</span> — це пекарня, яка взяла все найкраще, і
           зберегла смак традиційної випічки та натуральність інгредієнтів.
@@ -47,9 +51,9 @@
           alt="Чоловік пекар дивится на баотони із посмішкою"
         />
       </section>
-      <section>
+      <section id="chefs-section">
         <!-- Секція кухарі -->
-        <h2>Наші найкращі шеф-кухарі</h2>
+        <h2 class="section-title">Наші найкращі <span class="accent">шеф-кухарі</span></h2>
         <ul>
           <li>
             <article>
@@ -72,9 +76,9 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="formats-section">
         <!-- Секція форматів -->
-        <h2>Формати</h2>
+        <h2 class="section-title">Формати</h2>
         <ul>
           <li>
             <article>
@@ -93,9 +97,17 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="contact-section">
         <!-- Секція приєднайся -->
-        <h2>Приєднуйся до мережі пекарень</h2>
+        <h2 class="section-title">Приєднуйся до мережі пекарень</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10160.65337575809!2d30.48093377758026!3d50.456682906815885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1699304315509!5m2!1suk!2sua"
+          width="603"
+          height="595"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
 
@@ -105,10 +117,12 @@
           <!-- logo -->
         </a>
         <ul>
-          <li><a href="#" target="_blank">Франшиза</a></li>
-          <li><a href="#">Наші традиції</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li>
+            <a href="#traditions-section" target="_blank">Наші традиції</a>
+          </li>
+          <li><a href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a href="#formats-section">Формати</a></li>
+          <li><a href="#contact-section">Контакти</a></li>
         </ul>
       </nav>
 
@@ -132,7 +146,7 @@
           </li>
         </ul>
         <a href="#" target="_blank">Політика конфіденційності</a>
-        <p>© 2022 Дані захищені</p>
+        <p>&copy; 2022 Дані захищені</p>
       </address>
     </footer>
   </body>
